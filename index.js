@@ -6,7 +6,7 @@ var exec = require('child_process').exec;
 var server = 'ubuntu@ec2-13-59-24-182.us-east-2.compute.amazonaws.com';
 var key_pair = '/Users/Evan/aws_ssh/evanruby.pem';
 var remote_dir = 'nginx';
-var syncCmd   = 'rsync -avzr --progress --delete --exclude=".git" --exclude="bower_components" --exclude="node_modules" --exclude=".DS_Store" -e "ssh -i ' + key_pair + '" ~/nginx/ ' + server + ':' + remote_dir;
+var syncCmd   = 'rsync -avzr --progress --delete --exclude=".git" --exclude="bower_components" --exclude="sendgrid.env" --exclude="node_modules" --exclude=".DS_Store" -e "ssh -i ' + key_pair + '" ~/nginx/ ' + server + ':' + remote_dir;
 var scssCmd  = 'node-sass -o /Users/Evan/nginx/ebr-ui/source/stylesheets /Users/Evan/nginx/ebr-ui/source/scss/main.scss --output-style compressed';
 var busy = false;
 var sleepTime = 500;

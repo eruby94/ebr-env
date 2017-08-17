@@ -5,5 +5,12 @@
         "watch": true,
         "script": "app.js",
         "sourceDir": "/home/ubuntu/nginx/ebr-ui/"
+    },
+    {
+        "uid": "api",
+        "append": true,
+        "watch": true,
+        "script": "index.js",
+        "sourceDir": "/home/ubuntu/nginx/ebr-api/"
     }
 ]
