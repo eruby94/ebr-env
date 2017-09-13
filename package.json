@@ -1,19 +1,23 @@
 {
-  "name": "ebr-env",
-  "version": "1.0.0",
-  "description": "personal page development environment",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "dependencies": {
-    "async": "^2.0.0-rc.6",
-    "fireworm": "^0.7.0"
-  }
+	"name": "ebr-env",
+	"version": "1.0.0",
+	"description": "personal page development environment",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": ""
+	},
+	"dependencies": {
+		"async": "^2.0.0-rc.6",
+		"fireworm": "^0.7.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eruby94/ebr-env.git"
+	}
 }
