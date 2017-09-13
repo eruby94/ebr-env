@@ -7,7 +7,7 @@ const server = 'ubuntu@ec2-13-59-24-182.us-east-2.compute.amazonaws.com';
 const key_pair = '/Users/Evan/aws_ssh/evanruby.pem';
 const remote_dir = 'nginx';
 const syncCmd =
-	'rsync -avzr --progress --delete --exclude=".git" --exclude ".gitignore" --exclude="sendgrid.env" --exclude="node_modules" --exclude="npm-debug.log" --exclude=".DS_Store" -e "ssh -i ' +
+	'rsync -avzr --progress --delete --exclude=".git" --exclude ".gitignore" --exclude="sendgrid.env" --exclude="build" --exclude="node_modules" --exclude="npm-debug.log" --exclude=".DS_Store" -e "ssh -i ' +
 	key_pair +
 	'" ~/nginx/ ' +
 	server +
